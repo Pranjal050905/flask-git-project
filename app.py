@@ -10,9 +10,19 @@ def home():
 def about():
     return "About Page"
 
-@app.route('/login')          # ← ADD THIS
-def login():                  # ← ADD THIS
-    return "Login Page - Feature Branch"   # ← ADD THIS
+ 
+@app.route('/login')          
+def login():                  
+    return "Login Page - Feature Branch"   
+
+@app.route('/login')
+def login():
+    return "Login Page - Feature Branch"
+
+@app.route('/contact')          
+def contact():                  
+    return "Contact Page - Feature Contact Branch" 
+
 
 if __name__ == '__main__':
     app.run(debug=True)
